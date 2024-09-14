@@ -57,6 +57,8 @@ public class Progressbar
         for (int i = 0; i < _options.Lenght; i++)
         {
             bool needToPrintText = (i >= startingCharProgressIndex) && (i < startingCharProgressIndex + progresStr.Length);
+            needToPrintText &= _options.ShowText;
+
             char charToPrint = needToPrintText ? progresStr[progressStringIndex++] : stepChar;
 
             if (i < ProgressValue)

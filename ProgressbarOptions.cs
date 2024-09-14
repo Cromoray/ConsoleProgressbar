@@ -10,6 +10,11 @@ public struct ProgressbarOptions
     public int Lenght { get; set; }
 
     /// <summary>
+    /// If true print also the progress in this format: "10/35". Default is true
+    /// </summary>
+    public bool ShowText { get; set; }
+
+    /// <summary>
     /// Color of the terminal foreground for the completed part of the progressbar. Default is black.
     /// </summary>
     public ConsoleColor CompletedForegroundColor { get; set; }
@@ -32,6 +37,8 @@ public struct ProgressbarOptions
     public ProgressbarOptions()
     {
         Lenght = 51;
+        ShowText = true;
+
         CompletedForegroundColor = ConsoleColor.Black;
         CompletedBackgroundColor = ConsoleColor.White;
         UncompletedForegroundColor = ConsoleColor.Black;

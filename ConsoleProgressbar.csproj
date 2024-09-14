@@ -11,5 +11,7 @@
     <RepositoryUrl>https://github.com/Cromoray/ConsoleProgressbar</RepositoryUrl>
     <PackageTags>console;progressbar;customizable</PackageTags>
     <PackageId>$(Authors).$(AssemblyName)</PackageId>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
   </PropertyGroup>
 </Project>
