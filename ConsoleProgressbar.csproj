@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>10.0</LangVersion>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>ConsoleProgressbar</Title>
+    <Authors>lasi</Authors>
+    <Company />
+    <Description>A console progressbar easy to use and very customizable</Description>
+  </PropertyGroup>
+</Project>
