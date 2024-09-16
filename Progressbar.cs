@@ -29,14 +29,14 @@ public class Progressbar
         if (value > MaxValue) value = MaxValue;
 
         ActualValue = value;
-        PrintProgressBar();
+        Print();
     }
     public void StepOver() => SetValue(++ActualValue);
     public void StepOver(long value) => SetValue(ActualValue + value);
 
     public void SetProgressBarCursorPosition(int row, int column) => ProgressBarCursorPosition = (column, row);
 
-    public void PrintProgressBar()
+    public void Print()
     {
         const char stepChar = ' ';  //carattere da stampare per rappresentare la progressbar
 
@@ -74,6 +74,7 @@ public class Progressbar
 
             Console.Write(charToPrint);
         }
+        Console.Write('\n');
 
         //ripristino lo stato del terminale a prima della stampa
         Console.ForegroundColor = previousFgColor;
