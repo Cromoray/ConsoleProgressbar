@@ -13,5 +13,6 @@
     <PackageId>$(Authors).$(AssemblyName)</PackageId>
     <AssemblyVersion>1.0.1</AssemblyVersion>
     <FileVersion>1.0.1.0</FileVersion>
+    <Version>1.0.3</Version>
   </PropertyGroup>
 </Project>
