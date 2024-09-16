@@ -81,4 +81,13 @@ public class Progressbar
         Console.BackgroundColor = previousBgColor;
         Console.SetCursorPosition(previousCP.Left, previousCP.Top);
     }
+
+    public void Hide()
+    {
+        var previousCP = Console.GetCursorPosition();
+        Console.SetCursorPosition(ProgressBarCursorPosition.left, ProgressBarCursorPosition.top);
+
+        for (int i = 0; i < _options.Lenght; i++)
+            Console.Write(' ');
+    }
 }
